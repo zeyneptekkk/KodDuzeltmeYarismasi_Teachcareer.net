@@ -1,0 +1,79 @@
+{
+  "version": "pro-1",
+  "saved_at": "2025-10-13T20:46:34",
+  "total_books": 8,
+  "books": [
+    {
+      "id": 1,
+      "title": "1984",
+      "author": "george orwell",
+      "isbn": null,
+      "available": true,
+      "borrower": null,
+      "due_date": null
+    },
+    {
+      "id": 2,
+      "title": "Zeynebin Hayatı",
+      "author": "Zeynep Tek",
+      "isbn": null,
+      "available": true,
+      "borrower": null,
+      "due_date": null
+    },
+    {
+      "id": 3,
+      "title": "Kırmızı Başlıklı Kız",
+      "author": "anonim",
+      "isbn": null,
+      "available": true,
+      "borrower": null,
+      "due_date": null
+    },
+    {
+      "id": 4,
+      "title": "İnce Memed",
+      "author": "Yaşar Kemal",
+      "isbn": null,
+      "available": false,
+      "borrower": "Mehnet56",
+      "due_date": "2025-11-12"
+    },
+    {
+      "id": 5,
+      "title": "Nefes Nefese",
+      "author": "Ayşe Kulin",
+      "isbn": null,
+      "available": true,
+      "borrower": null,
+      "due_date": null
+    },
+    {
+      "id": 6,
+      "title": "Ayşe Kulin",
+      "author": "Veda",
+      "isbn": null,
+      "available": false,
+      "borrower": "zeynepp",
+      "due_date": "2026-01-20"
+    },
+    {
+      "id": 7,
+      "title": "Kürk Mantolu Madonna",
+      "author": "Sabahattin Ali",
+      "isbn": null,
+      "available": true,
+      "borrower": null,
+      "due_date": null
+    },
+    {
+      "id": 8,
+      "title": "Bekle Beni",
+      "author": "Livaneli",
+      "available": true,
+      "borrower": null,
+      "due_date": null,
+      "created_at": "2025-10-13T20:37:11"
+    }
+  ]
+}

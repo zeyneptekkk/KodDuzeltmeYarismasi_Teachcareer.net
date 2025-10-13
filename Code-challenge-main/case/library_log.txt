@@ -1,0 +1,54 @@
+2025-10-13 19:16:00,317 [INFO] Kitap eklendi: huzursuzluk (zülfü livaneli) [id=1, isbn=2]
+2025-10-13 19:16:04,591 [INFO] Geciken: 0 kitap, tahmini ücret=0.00
+2025-10-13 19:16:13,626 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 19:16:33,788 [INFO] Arama 'huzur' (mode=huzursuz, normalize=True) \u2192 1 sonuç
+2025-10-13 19:16:44,355 [INFO] Zamanýnda iade: id=1
+2025-10-13 19:16:44,356 [INFO] Ýade ücreti: id=1, delay=0 gün, fee=0.00
+2025-10-13 19:16:51,192 [INFO] Geciken: 0 kitap, tahmini ücret=0.00
+2025-10-13 19:26:54,546 [INFO] Arama 'huzu' (mode=huruz, normalize=True) \u2192 0 sonuç
+2025-10-13 19:27:02,759 [INFO] Arama 'huzursu' (mode=huzursuz, normalize=True) \u2192 0 sonuç
+2025-10-13 19:27:08,818 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 19:27:27,802 [INFO] Kitap eklendi: 1984 (george orwell) [id=1, isbn=None]
+2025-10-13 19:27:31,578 [INFO] Geciken: 0 kitap, tahmini ücret=0.00
+2025-10-13 19:27:36,481 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 19:27:49,831 [INFO] Arama '19' (mode=19, normalize=True) \u2192 1 sonuç
+2025-10-13 19:42:35,855 [INFO] Arama '1234566' (mode=hzuzu, normalize=True) \u2192 0 sonuç
+2025-10-13 19:54:25,131 [INFO] Arama '11111' (mode=huzur, normalize=True) \u2192 0 sonuç
+2025-10-13 19:54:33,195 [INFO] Geciken: 0 kitap, tahmini ücret=0.00
+2025-10-13 19:58:59,612 [INFO] Kitap eklendi: zeynebin hayatý (zeynep tek) [id=2, isbn=None]
+2025-10-13 19:59:11,065 [INFO] Geciken: 0 kitap, tahmini ücret=0.00
+2025-10-13 20:02:07,288 [INFO] Kitap eklendi: Zeynebin Hayatý (Zeynep Tek) [id=2, isbn=None]
+2025-10-13 20:02:07,290 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:02:10,601 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:02:39,377 [INFO] Kitap eklendi: Kýrmýzý Baþlýklý Kýz (anonim) [id=3, isbn=None]
+2025-10-13 20:02:39,378 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:02:49,936 [INFO] Arama 'anon' (mode=anon, normalize=True) \u2192 1 sonuç
+2025-10-13 20:02:58,796 [INFO] Arama 'kýrmý' (mode=kýrm, normalize=True) \u2192 1 sonuç
+2025-10-13 20:03:39,464 [INFO] Arama '11' (mode=1, normalize=True) \u2192 0 sonuç
+2025-10-13 20:03:46,366 [INFO] Arama '19' (mode=19, normalize=True) \u2192 1 sonuç
+2025-10-13 20:03:55,818 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:11:48,064 [INFO] Arama '19' (mode=19, normalize=True) \u2192 1 sonuç
+2025-10-13 20:12:22,979 [INFO] Ödünç verildi: id=1 \u2192 zeyneptek (due=2025-10-27)
+2025-10-13 20:12:22,980 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:12:29,809 [INFO] Geciken: 0 kitap, tahmini ücret=0.00
+2025-10-13 20:12:39,191 [INFO] Zamanýnda iade: id=1
+2025-10-13 20:12:39,192 [INFO] Ýade ücreti: id=1, delay=0 gün, fee=0.00
+2025-10-13 20:12:39,193 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:14:02,019 [INFO] Kitap eklendi: Ýnce Memed (Yaþar Kemal) [id=4, isbn=None]
+2025-10-13 20:14:02,021 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:14:34,902 [INFO] Kitap eklendi: Nefes Nefese (Ayþe Kulin) [id=5, isbn=None]
+2025-10-13 20:14:34,903 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:15:12,843 [INFO] Kitap eklendi: Ayþe Kulin (Veda) [id=6, isbn=None]
+2025-10-13 20:15:12,844 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:15:23,964 [INFO] Arama 'ayþe' (mode=ayþe, normalize=True) \u2192 2 sonuç
+2025-10-13 20:15:42,170 [INFO] Ödünç verildi: id=6 \u2192 zeynepp (due=2026-01-20)
+2025-10-13 20:15:42,171 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:15:50,557 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:20:05,232 [INFO] Kitap eklendi: Kürk Mantolu Madonna (Sabahattin Ali) [id=7, isbn=None]
+2025-10-13 20:20:05,238 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:37:11,205 [INFO] Kitap eklendi: Bekle Beni (Livaneli) [id=8]
+2025-10-13 20:37:11,212 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:42:13,212 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:46:24,064 [INFO] Ödünç verildi: id=4 \u2192 Mehnet56 (due=2025-11-12)
+2025-10-13 20:46:24,071 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-13 20:46:34,678 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
