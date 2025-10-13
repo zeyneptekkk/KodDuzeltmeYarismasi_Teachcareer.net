@@ -18,8 +18,14 @@
 </p>
 
 ---
+# Kütüphane Uygulaması (CLI) — Türkçe Akıllı Arama, Kalıcı Kayıt, Testli Tasarım
 
-## 🔥 Neden Bu Proje?
+Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalmayıp, **kullanıcı deneyimi** ve **mühendislik kalitesi** ile genişleten bir örnek projedir.  
+Öne çıkanlar: **Türkçe/aksan duyarlı arama**, **Title Case normalizasyonu**, **ödünç/iade + gecikme ücreti**, **kalıcı JSON formatı**, **zengin terminal arayüzü (Rich)** ve **pytest testleri**.
+
+---
+
+## 🔥 Proje?
 
 Yarışmada verilen kitap yönetimi görevini sadece “düzeltmekle” kalmayıp, **kullanıcı deneyimi** ve **mühendislik kalitesi** ekledim:
 
@@ -31,68 +37,44 @@ Yarışmada verilen kitap yönetimi görevini sadece “düzeltmekle” kalmayı
 - ✅ **Güvenli I/O** — dosya yoksa/bozuksa hata yerine anlamlı geri dönüş
 - ✅ **Testler (pytest)** — 5/5 PASS
 
----
 
-## 🧭 İçindekiler
+## 1) Problem Tanımı & Beklentiler
 
-- [Kurulum](#-kurulum)
-- [Hızlı Başlangıç](#-hızlı-başlangıç)
-- [Özellikler](#-özellikler)
-- [Ekran Görüntüleri](#-ekran-görüntüleri)
-- [Kullanım (Demo CLI)](#-kullanım-demo-cli)
-- [Testler](#-testler)
-- [Proje Yapısı](#-proje-yapısı)
-- [Mimari & Akış](#-mimari--akış)
-- [Teknik Notlar](#-teknik-notlar)
-- [SSS](#-sss)
-- [Yol Haritası](#-yol-haritası)
-- [Lisans & İletişim](#-lisans--iletişim)
+- Kitap listesini yönet: **ekle**, **ara**, **ödünç ver**, **iade et**, **gecikenleri listele**.
+- ID atama: liste boşsa `1`, doluysa **max(id)+1** (sıra bağımsız).
+- Arama: başlık/yazar alanında **büyük–küçük harf ve aksan bağımsız** arama. Boş sorgu → boş liste.
+- Ödünç verme: yalnız **müsait** kitaplar verilebilir; iade tarihini gün bazında hesapla.
+- İade: kitabı sıfırla; **gecikme gününü ve ücreti** hesapla.
+- Kalıcılaştırma: **JSON** formatında güvenli kaydet/okut (dosya yok/bozuk → anlamlı dönüş).
+- CLI/demoda anlaşılır ve temiz çıktı.
 
 ---
 
-t = tüm liste
-a = ara
-e = ekle
-b = ödünç ver
-o = overdue (gecikenler)
-i = iade (gecikme + ücret)
-k = kaydet
-y = yükle
-u = günlük ücret
-q = çıkış
+## 2) Çözüm Özeti
+
+- **library_pro.py**: Uygulama mantığı + CLI (interaktif demo).
+- **test_pro.py**: İşlevsel testler (pytest) – 5/5 PASS.
+- **Zengin CLI**: `rich` varsa renkli kartlar ve genişleyen tablo; yoksa ANSI fallback.
+- **Türkçe normalize**: `İ/ı` için özel map + `unicodedata` ile aksan temizleme.
+- **Kalıcı JSON**: meta’lı format (`version`, `saved_at`, `total_books`, `books`).
+- **Hata toleranslı I/O**: `FileNotFoundError` ve `JSONDecodeError` güvenli yönetim.
+
+---
+
+## 3) Teknoloji Yığını
+
+- **Python 3.10+**
+- **Standart kütüphane**: `datetime`, `json`, `logging`, `typing`, `unicodedata`, `re`, `os`
+- **3. parti (opsiyonel/prod)**:  
+  - `rich` — zengin terminal, tablo ve paneller (opsiyonel)
+  - `colorama` — Windows ANSI renk düzeltmesi (opsiyonel)
+- **3. parti (dev/test)**:  
+  - `pytest` — birim testleri
+
+`requirements.txt`:
 
 
-> t
-
-
-> a
-Arama: kurk mantolu
-Mod (any/all/prefix): all
-
-
-> e
-Başlık: ayşe kulin
-Yazar: veda
-✓ Eklendi.
-# Listeye "Ayşe Kulin — Veda" olarak eklenir.
-
- > b
-Ödünç verilecek ID: 2
-Kullanıcı adı: Zey
-Gün sayısı (örn 14): 7
-✓ Ödünç verildi.
-# Listede "Müsait değil", Alan: Zey, Teslim: YYYY-MM-DD
-
-
-> o
-Geciken 1 kitap (tahmini ücret=3.00): ['1984']
-
-
-> i
-İade edilecek ID: 2
-
-✓ İade edildi. Gecikme=2 gün, Ücret=3.00
-
+---
 
 
 <img width="1761" height="800" alt="Ekran görüntüsü 2025-10-13 214226" src="https://github.com/user-attachments/assets/ae35ba60-f5cf-41f4-8c6b-4b85d4103406" />
