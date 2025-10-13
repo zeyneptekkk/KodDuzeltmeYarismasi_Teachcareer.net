@@ -1,7 +1,6 @@
 <!-- Banner / Kapak -->
 <p align="center">
-  
-  <img src="docs/cover.png" alt="Pro Kütüphane — Terminal Demo" width="100%" />
+
 </p>
 
 <h1 align="center">📚 Pro Kütüphane (CLI) — Türkçe Akıllı Arama, Zengin Terminal</h1>
@@ -51,5 +50,49 @@ Yarışmada verilen kitap yönetimi görevini sadece “düzeltmekle” kalmayı
 
 ---
 
-# 2) Bağımlılıklar
-python -m pip install -r requirements.txt
+t = tüm liste
+a = ara
+e = ekle
+b = ödünç ver
+o = overdue (gecikenler)
+i = iade (gecikme + ücret)
+k = kaydet
+y = yükle
+u = günlük ücret
+q = çıkış
+
+
+> t
+
+
+> a
+Arama: kurk mantolu
+Mod (any/all/prefix): all
+
+
+> e
+Başlık: ayşe kulin
+Yazar: veda
+✓ Eklendi.
+# Listeye "Ayşe Kulin — Veda" olarak eklenir.
+
+ > b
+Ödünç verilecek ID: 2
+Kullanıcı adı: Zey
+Gün sayısı (örn 14): 7
+✓ Ödünç verildi.
+# Listede "Müsait değil", Alan: Zey, Teslim: YYYY-MM-DD
+
+
+> o
+Geciken 1 kitap (tahmini ücret=3.00): ['1984']
+
+
+> i
+İade edilecek ID: 2
+
+✓ İade edildi. Gecikme=2 gün, Ücret=3.00
+
+
+
+<img width="1761" height="800" alt="Ekran görüntüsü 2025-10-13 214226" src="https://github.com/user-attachments/assets/ae35ba60-f5cf-41f4-8c6b-4b85d4103406" />
