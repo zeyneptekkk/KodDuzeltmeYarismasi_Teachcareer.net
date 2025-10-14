@@ -84,8 +84,8 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 -------------------------------------------------------------------
 
 
-> s
-> 
+s
+
 ✅ Müsait Kitaplar
 [ID] [Başlık]                 [Yazar]             [Durum]
   1  Dune                     Frank Herbert       Müsait
@@ -94,80 +94,89 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 -------------------------------------------------------------------
 
 
-> a
-> 
+a
+
 Arama: dUnE
 Mod (any/all/prefix): any
 1 sonuç:
  - Dune — Frank Herbert
+
 --------------------------------------------------------------------
 
 
-> e
-> 
+e
+
 Başlık: sefiller
 Yazar: victor hugo
 ✓ Eklendi.
+
 --------------------------------------------------------------------
 
 
-> b
-> 
+b
+
 Ödünç verilecek ID: 1
 Kullanıcı adı: ali
 Gün sayısı (örn 14): 7
 ✓ Ödünç verildi.
+
 --------------------------------------------------------------------
 
 
-> w
-> 
+w
+
 Waitlist ID: 1
 Kullanıcı adı: ayşe
 ✓ Waitlist'e eklendi.
+
 -------------------------------------------------------------------
 
 
-> r
-> 
+r
+
 Yenilenecek ID: 1
 Ek gün (örn 7): 7
 ✓ Yenilendi.
+
 -------------------------------------------------------------------
 
 
-> o
-> 
+o
+
 Geciken 1 kitap (tahmini ücret=3.00): ['1984']
+
 -------------------------------------------------------------------
 
 
-> i
-> 
+i
+
 İade edilecek ID: 3
 ✓ İade. Gecikme=2 gün, Ücret=2.00
+
 -------------------------------------------------------------------
 
 
-> x
-> 
+x
+
 CSV yol (örn export.csv): kitaplar.csv
 ✓ Dışa aktarıldı.
+
 -------------------------------------------------------------------
 
 
-> m
-> 
+m
+
 CSV yol (örn import.csv): import.csv
 ✓ İçe aktarıldı (eklenen=5).
+
 ------------------------------------------------------------------
 
 
-> k
-> 
-✓ Kaydedildi.
------------------------------------------------------------------
+k
 
+✓ Kaydedildi.
+
+-----------------------------------------------------------------
 
 > y
 > 
