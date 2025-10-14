@@ -73,6 +73,7 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 
 > t
+> 
 📚 Pro Kütüphane — Envanter
 [ID] [Başlık]                 [Yazar]             [Durum]        [Alan]  [Aldığı]     [Teslim]     [Bekleyen]
   1  Dune                     Frank Herbert       Müsait          -       -            -            0
@@ -84,6 +85,7 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 
 > s
+> 
 ✅ Müsait Kitaplar
 [ID] [Başlık]                 [Yazar]             [Durum]
   1  Dune                     Frank Herbert       Müsait
@@ -93,6 +95,7 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 
 > a
+> 
 Arama: dUnE
 Mod (any/all/prefix): any
 1 sonuç:
@@ -101,6 +104,7 @@ Mod (any/all/prefix): any
 
 
 > e
+> 
 Başlık: sefiller
 Yazar: victor hugo
 ✓ Eklendi.
@@ -108,6 +112,7 @@ Yazar: victor hugo
 
 
 > b
+> 
 Ödünç verilecek ID: 1
 Kullanıcı adı: ali
 Gün sayısı (örn 14): 7
@@ -116,6 +121,7 @@ Gün sayısı (örn 14): 7
 
 
 > w
+> 
 Waitlist ID: 1
 Kullanıcı adı: ayşe
 ✓ Waitlist'e eklendi.
@@ -123,6 +129,7 @@ Kullanıcı adı: ayşe
 
 
 > r
+> 
 Yenilenecek ID: 1
 Ek gün (örn 7): 7
 ✓ Yenilendi.
@@ -130,34 +137,40 @@ Ek gün (örn 7): 7
 
 
 > o
+> 
 Geciken 1 kitap (tahmini ücret=3.00): ['1984']
 -------------------------------------------------------------------
 
 
 > i
+> 
 İade edilecek ID: 3
 ✓ İade. Gecikme=2 gün, Ücret=2.00
 -------------------------------------------------------------------
 
 
 > x
+> 
 CSV yol (örn export.csv): kitaplar.csv
 ✓ Dışa aktarıldı.
 -------------------------------------------------------------------
 
 
 > m
+> 
 CSV yol (örn import.csv): import.csv
 ✓ İçe aktarıldı (eklenen=5).
 ------------------------------------------------------------------
 
 
 > k
+> 
 ✓ Kaydedildi.
 -----------------------------------------------------------------
 
 
 > y
+> 
 ✓ Yüklendi. Toplam: 12
 
 
