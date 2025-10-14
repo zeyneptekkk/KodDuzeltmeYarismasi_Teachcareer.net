@@ -17,6 +17,8 @@
   <i>Türkçe/aksan duyarlı arama, Title Case normalizasyon, ödünç/iade (gecikme & ücret), kalıcı JSON, <b>Rich</b> ile renkli & zebra tablo, otomatik kaydetme.</i>
 </p>
 
+
+
 ---
 # Kütüphane Uygulaması (CLI) — Türkçe Akıllı Arama, Kalıcı Kayıt, Testli Tasarım
 
@@ -24,6 +26,8 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 Öne çıkanlar: **Türkçe/aksan duyarlı arama**, **Title Case normalizasyonu**, **ödünç/iade + gecikme ücreti**, **kalıcı JSON formatı**, **zengin terminal arayüzü (Rich)** ve **pytest testleri**.
 
 ---
+
+
 
 
 ## 1) Problem Tanımı & Beklentiler
@@ -37,6 +41,8 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 - CLI/demoda anlaşılır ve temiz çıktı.
 
 ---
+
+
 
 
 # 🧭 Menü & Komut Haritası
@@ -63,6 +69,9 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 
 
+
+
+
 > t
 📚 Pro Kütüphane — Envanter
 [ID] [Başlık]                 [Yazar]             [Durum]        [Alan]  [Aldığı]     [Teslim]     [Bekleyen]
@@ -73,6 +82,7 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 -------------------------------------------------------------------
 
+
 > s
 ✅ Müsait Kitaplar
 [ID] [Başlık]                 [Yazar]             [Durum]
@@ -81,6 +91,7 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 -------------------------------------------------------------------
 
+
 > a
 Arama: dUnE
 Mod (any/all/prefix): any
@@ -88,11 +99,13 @@ Mod (any/all/prefix): any
  - Dune — Frank Herbert
 --------------------------------------------------------------------
 
+
 > e
 Başlık: sefiller
 Yazar: victor hugo
 ✓ Eklendi.
 --------------------------------------------------------------------
+
 
 > b
 Ödünç verilecek ID: 1
@@ -101,11 +114,13 @@ Gün sayısı (örn 14): 7
 ✓ Ödünç verildi.
 --------------------------------------------------------------------
 
+
 > w
 Waitlist ID: 1
 Kullanıcı adı: ayşe
 ✓ Waitlist'e eklendi.
 -------------------------------------------------------------------
+
 
 > r
 Yenilenecek ID: 1
@@ -113,42 +128,39 @@ Ek gün (örn 7): 7
 ✓ Yenilendi.
 -------------------------------------------------------------------
 
+
 > o
 Geciken 1 kitap (tahmini ücret=3.00): ['1984']
 -------------------------------------------------------------------
+
 
 > i
 İade edilecek ID: 3
 ✓ İade. Gecikme=2 gün, Ücret=2.00
 -------------------------------------------------------------------
 
+
 > x
 CSV yol (örn export.csv): kitaplar.csv
 ✓ Dışa aktarıldı.
 -------------------------------------------------------------------
+
 
 > m
 CSV yol (örn import.csv): import.csv
 ✓ İçe aktarıldı (eklenen=5).
 ------------------------------------------------------------------
 
+
 > k
 ✓ Kaydedildi.
 -----------------------------------------------------------------
+
 
 > y
 ✓ Yüklendi. Toplam: 12
 
 
-
-
-
-
-> s
-✅ Müsait Kitaplar
-[ID] [Başlık]                 [Yazar]            [Durum]
-  1   Dune                    Frank Herbert      Müsait
-  2   Kürk Mantolu Madonna    Sabahattin Ali     Müsait
 
 
 
