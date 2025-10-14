@@ -25,18 +25,6 @@ Bu repo; verilen “kitap yönetimi” gereksinimlerini sadece düzeltmekle kalm
 
 ---
 
-## 🔥 Proje?
-
-Yarışmada verilen kitap yönetimi görevini sadece “düzeltmekle” kalmayıp, **kullanıcı deneyimi** ve **mühendislik kalitesi** ekledim:
-
-- ✅ **Türkçe & aksan akıllı arama** (İ/ı, ş/Ş vb. dert yok)
-- ✅ **Başlık/Yazar Title Case** — girdi otomatik güzelleşir
-- ✅ **Ödünç verme & iade** — gecikme ve ücret hesabı
-- ✅ **Zengin terminal arayüzü** — Rich: renkli rozetler, zebra tablo, sütun katlama
-- ✅ **Kalıcı kayıt** — `books_pro.json` (meta’lı)
-- ✅ **Güvenli I/O** — dosya yoksa/bozuksa hata yerine anlamlı geri dönüş
-- ✅ **Testler (pytest)** — 5/5 PASS
-
 
 ## 1) Problem Tanımı & Beklentiler
 
@@ -50,31 +38,118 @@ Yarışmada verilen kitap yönetimi görevini sadece “düzeltmekle” kalmayı
 
 ---
 
-## 2) Çözüm Özeti
 
-- **library_pro.py**: Uygulama mantığı + CLI (interaktif demo).
-- **test_pro.py**: İşlevsel testler (pytest) – 5/5 PASS.
-- **Zengin CLI**: `rich` varsa renkli kartlar ve genişleyen tablo; yoksa ANSI fallback.
-- **Türkçe normalize**: `İ/ı` için özel map + `unicodedata` ile aksan temizleme.
-- **Kalıcı JSON**: meta’lı format (`version`, `saved_at`, `total_books`, `books`).
-- **Hata toleranslı I/O**: `FileNotFoundError` ve `JSONDecodeError` güvenli yönetim.
+# 🧭 Menü & Komut Haritası
 
----
-
-## 3) Teknoloji Yığını
-
-- **Python 3.10+**
-- **Standart kütüphane**: `datetime`, `json`, `logging`, `typing`, `unicodedata`, `re`, `os`
-- **3. parti (opsiyonel/prod)**:  
-  - `rich` — zengin terminal, tablo ve paneller (opsiyonel)
-  - `colorama` — Windows ANSI renk düzeltmesi (opsiyonel)
-- **3. parti (dev/test)**:  
-  - `pytest` — birim testleri
-
-`requirements.txt`:
+| Kısayol | İşlem                | Ne Yapar?                                                              |
+| :-----: | -------------------- | ---------------------------------------------------------------------- |
+|   `t`   | **tüm liste**        | Bütün envanteri tabloda gösterir.                                      |
+|   `s`   | **sadece müsaitler** | Anlık olarak **müsait** olanları listeler (ödünçte olmayanlar).        |
+|   `a`   | **ara**              | Türkçe-aksan duyarlı arama (`any / all / prefix` modları desteklenir). |
+|   `e`   | **ekle**             | Yeni kitap ekler (Title Case, duplicate kontrolüyle).                  |
+|   `b`   | **ödünç ver**        | Kitabı kullanıcıya verir; **Aldığı/Teslim** tarihlerini ayarlar.       |
+|   `w`   | **waitlist'e ekle**  | Meşgul kitaba sıraya girer; iade olunca otomatik atanır.               |
+|   `r`   | **yenile (renew)**   | Gecikmemiş kitabın teslim tarihini kurallı şekilde uzatır.             |
+|   `o`   | **overdue**          | Geciken kitapları ve tahmini toplam ücreti gösterir.                   |
+|   `i`   | **iade (ücretli)**   | İade eder; gecikme gününden **ücret** hesaplar ve waitlist varsa atar. |
+|   `x`   | **CSV dışa aktar**   | Listeyi CSV’ye yazar (örn. `export.csv`).                              |
+|   `m`   | **CSV içe aktar**    | CSV’den `title/author` alanlarıyla kitap ekler (duplicate’ları atlar). |
+|   `k`   | **kaydet**           | JSON’a kaydeder (atomic write + meta bilgisi).                         |
+|   `y`   | **yükle**            | JSON’dan yeniden yükler.                                               |
+|   `u`   | **günlük ücret**     | Gecikme ücretini değiştirir (varsayılan: `1.5`).                       |
+|   `q`   | **çıkış**            | Kaydedip güvenle çıkar.                                                |
 
 
----
 
 
-<img width="1761" height="800" alt="Ekran görüntüsü 2025-10-13 214226" src="https://github.com/user-attachments/assets/ae35ba60-f5cf-41f4-8c6b-4b85d4103406" />
+
+> t
+📚 Pro Kütüphane — Envanter
+[ID] [Başlık]                 [Yazar]             [Durum]        [Alan]  [Aldığı]     [Teslim]     [Bekleyen]
+  1  Dune                     Frank Herbert       Müsait          -       -            -            0
+  2  Kürk Mantolu Madonna     Sabahattin Ali      Müsait          -       -            -            0
+  3  1984                     George Orwell       Müsait değil    Zey     2025-10-01   2025-10-12   1
+
+
+-------------------------------------------------------------------
+
+> s
+✅ Müsait Kitaplar
+[ID] [Başlık]                 [Yazar]             [Durum]
+  1  Dune                     Frank Herbert       Müsait
+  2  Kürk Mantolu Madonna     Sabahattin Ali      Müsait
+
+-------------------------------------------------------------------
+
+> a
+Arama: dUnE
+Mod (any/all/prefix): any
+1 sonuç:
+ - Dune — Frank Herbert
+--------------------------------------------------------------------
+
+> e
+Başlık: sefiller
+Yazar: victor hugo
+✓ Eklendi.
+--------------------------------------------------------------------
+
+> b
+Ödünç verilecek ID: 1
+Kullanıcı adı: ali
+Gün sayısı (örn 14): 7
+✓ Ödünç verildi.
+--------------------------------------------------------------------
+
+> w
+Waitlist ID: 1
+Kullanıcı adı: ayşe
+✓ Waitlist'e eklendi.
+-------------------------------------------------------------------
+
+> r
+Yenilenecek ID: 1
+Ek gün (örn 7): 7
+✓ Yenilendi.
+-------------------------------------------------------------------
+
+> o
+Geciken 1 kitap (tahmini ücret=3.00): ['1984']
+-------------------------------------------------------------------
+
+> i
+İade edilecek ID: 3
+✓ İade. Gecikme=2 gün, Ücret=2.00
+-------------------------------------------------------------------
+
+> x
+CSV yol (örn export.csv): kitaplar.csv
+✓ Dışa aktarıldı.
+-------------------------------------------------------------------
+
+> m
+CSV yol (örn import.csv): import.csv
+✓ İçe aktarıldı (eklenen=5).
+------------------------------------------------------------------
+
+> k
+✓ Kaydedildi.
+-----------------------------------------------------------------
+
+> y
+✓ Yüklendi. Toplam: 12
+
+
+
+
+
+
+> s
+✅ Müsait Kitaplar
+[ID] [Başlık]                 [Yazar]            [Durum]
+  1   Dune                    Frank Herbert      Müsait
+  2   Kürk Mantolu Madonna    Sabahattin Ali     Müsait
+
+
+
+<img width="1699" height="615" alt="Ekran görüntüsü 2025-10-14 172050" src="https://github.com/user-attachments/assets/232e3ee4-09de-499d-bec1-a918a851928d" />
