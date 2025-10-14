@@ -52,3 +52,44 @@
 2025-10-13 20:46:24,064 [INFO] Ödünç verildi: id=4 \u2192 Mehnet56 (due=2025-11-12)
 2025-10-13 20:46:24,071 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
 2025-10-13 20:46:34,678 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 15:28:04,703 [INFO] Kayýtlar yeni þemaya yükseltildi.
+2025-10-14 15:28:32,537 [INFO] Arama 'nefes' (mode=nefes) \u2192 1 sonuç
+2025-10-14 15:28:44,788 [INFO] Kayýtlar yeni þemaya yükseltildi.
+2025-10-14 15:28:53,616 [INFO] Arama 'aa' (mode=nefess) \u2192 0 sonuç
+2025-10-14 15:29:07,399 [INFO] Arama 'z' (mode=zeynep) \u2192 2 sonuç
+2025-10-14 15:29:26,138 [INFO] Arama 'ze' (mode=zeynep, normalize=True) \u2192 1 sonuç
+2025-10-14 15:29:43,897 [INFO] Kayýtlar yeni þemaya yükseltildi.
+2025-10-14 15:30:21,318 [INFO] Arama 'zeynep' (mode=zeynep) \u2192 1 sonuç
+2025-10-14 15:46:06,692 [INFO] Kayýtlar yeni þemaya yükseltildi.
+2025-10-14 15:46:21,798 [INFO] Arama 'aþe' (mode=any) \u2192 0 sonuç
+2025-10-14 15:46:54,259 [INFO] Arama 'kýrmýzý' (mode=any) \u2192 1 sonuç
+2025-10-14 15:47:15,717 [INFO] Arama 'sabaha' (mode=any) \u2192 1 sonuç
+2025-10-14 15:47:47,596 [INFO] Arama 'ayþe kulin' (mode=any) \u2192 2 sonuç
+2025-10-14 15:48:47,759 [INFO] Ödünç: id=2 \u2192 Ayþe55 (due=2025-11-06)
+2025-10-14 15:48:47,767 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 15:51:06,350 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 15:51:29,047 [INFO] Yenileme: id=2, +2 gün \u2192 2025-11-08
+2025-10-14 15:51:29,051 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 15:51:50,112 [INFO] Overdue: 0 kitap, toplam ücret=0.00
+2025-10-14 15:52:06,981 [INFO] Waitlist: id=2 \u2190 zeynep56
+2025-10-14 15:52:06,987 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 16:31:08,006 [INFO] Kayýtlar yeni þemaya yükseltildi.
+2025-10-14 17:01:25,229 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:11:37,275 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:12:12,176 [INFO] Ödünç: id=5 \u2192 ali66 (borrowed_at=2025-10-14, due=2025-10-26)
+2025-10-14 17:12:12,184 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:12:25,395 [INFO] Zamanýnda iade: id=2
+2025-10-14 17:12:25,395 [INFO] Auto-assign: zeynep56 \u2192 id=2 (borrowed_at=2025-10-14, due=2025-10-28)
+2025-10-14 17:12:25,395 [INFO] Ýade ücreti: id=2, delay=0, fee=0.00
+2025-10-14 17:12:25,398 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:12:46,895 [INFO] Zamanýnda iade: id=4
+2025-10-14 17:12:46,896 [INFO] Ýade ücreti: id=4, delay=0, fee=0.00
+2025-10-14 17:12:46,901 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:17:08,162 [INFO] Kitap eklendi: Sahipsiz Mezar (Ahmet Ümit) [id=9]
+2025-10-14 17:17:08,169 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:17:31,731 [INFO] Kitap eklendi: Siyer (Mehmet Atlý) [id=10]
+2025-10-14 17:17:31,735 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:18:24,120 [INFO] Kitap eklendi: Arka Sokaklar (Rýza Baba) [id=11]
+2025-10-14 17:18:24,125 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:18:34,850 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
+2025-10-14 17:21:09,786 [INFO] Dosyaya kaydedildi: books_pro.json (meta=True)
