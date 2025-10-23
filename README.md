@@ -1,5 +1,5 @@
 
-![Uploading image.png…]()
+![Uploading Ekran görüntüsü 2025-10-23 225051.png…]()
 
 
 
