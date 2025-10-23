@@ -1,5 +1,7 @@
+<img width="765" height="766" alt="Ekran görüntüsü 2025-10-23 225051" src="https://github.com/user-attachments/assets/1dbdb933-0e4d-403a-8a10-7032b229b346" />
 
-![Uploading Ekran görüntüsü 2025-10-23 225051.png…]()
+
+
 
 
 
